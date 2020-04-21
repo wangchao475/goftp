@@ -384,7 +384,7 @@ func parseLIST(entry string, loc *time.Location, skipSelfParent bool) (os.FileIn
 	}
 
 	info := &ftpFile{
-		name:  filepath.Base(matches[8]),
+		name:  matches[8],
 		mode:  mode,
 		mtime: mtime,
 		raw:   entry,
